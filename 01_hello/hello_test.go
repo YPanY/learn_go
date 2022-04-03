@@ -1,6 +1,7 @@
-package main
+package hello
 
 import "testing"
+import "fmt"
 
 func TestHello(t *testing.T) {
 
@@ -34,4 +35,10 @@ func TestHello(t *testing.T) {
 		want := "Bonjour, Worlde"
 		assertCorrectMessage(t, got, want)
 	})
+}
+
+func ExampleHello() {
+	got := Hello("World","English")
+	fmt.Println(got)
+	// output: Hello, World
 }
