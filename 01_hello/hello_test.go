@@ -37,8 +37,13 @@ func TestHello(t *testing.T) {
 	})
 }
 
+/* the example function will not be executed if you remove the comment
+	output: Hello, World. Although the function will be compiled, it won't be executed.
+ */
 func ExampleHello() {
 	got := Hello("World","English")
 	fmt.Println(got)
 	// output: Hello, World
 }
+
+// enter command "godoc -http=:6060" to start the local server for the document
