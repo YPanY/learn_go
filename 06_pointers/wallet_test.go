@@ -2,8 +2,6 @@ package pointers
 
 import "testing"
 
-//import "fmt"
-
 func TestWallet(t *testing.T) {
 
 	t.Run("Deposit", func(t *testing.T) {
