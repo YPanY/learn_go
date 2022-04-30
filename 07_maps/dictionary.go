@@ -6,7 +6,7 @@ type Dictionary map[string]string
 
 var (
 	ErrorNotFound = errors.New("could not find the word you were looking for")
-	ErrWordWxists = errors.New("cannot add word because it already exists")
+	ErrWordExists = errors.New("cannot add word because it already exists")
 )
 
 func (d Dictionary) Search(word string) (string, error) {
